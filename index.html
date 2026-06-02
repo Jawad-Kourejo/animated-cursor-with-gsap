@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .gradient-bg {
+        background: repeating-linear-gradient(
+          -45deg,
+          #540b0e,
+          #e63946,
+          #14a897,
+          #ff006e,
+          #540b0e
+        );
+        background-size: 500% 500%;
+        animation: gradient 15s ease-in-out infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="mainScreen cursor-none relative h-screen w-screen overflow-x-hidden"
+  >
+    <!-- CURSOR ELEMENTS -->
+    <div
+      class="fixed top-0 left-0 w-[20px] h-[20px] rounded-full bg-black cursorPointerMain mix-blend-difference bg-white"
+    ></div>
+    <div
+      class="fixed top-0 left-0 w-[60px] h-[60px] rounded-full bg-black cursorPointerMid mix-blend-difference border-8 border-white"
+    ></div>
+    <div
+      class="fixed top-0 left-0 w-[100px] h-[100px] rounded-full bg-black cursorPointerOuter mix-blend-difference border-9 border-white"
+    ></div>
+
+    <!-- MAIN CONTENT -->
+    <div
+      class="flex items-center justify-center h-screen text-white mytxt01Box uppercase font-thin text-7xl gradient-bg"
+    >
+      <p>
+        layers Following with inverted 
+        colors effect <br /> cursor with SM<span class="font-[50]">O</span><span class="font-[100]">O</span><span class="font-[200]">O</span><span class="font-[300]">O</span><span class="font-[400]">O</span><span class="font-[500]">O</span><span class="font-[600]">O</span><span class="font-[700]">O</span><span class="font-[800]">O</span><span class="font-[900]">O</span><span class="font-[1000]">O</span><span class="font-[1000]">O</span><span class="font-[1000]">O</span>TH scrolling <br />
+        using GSAP & Lenis.
+      </p>
+    </div>
+
+    <div
+      class="flex items-center justify-center h-[110vh] text-white bg-neutral-950 mytxt01Box"
+    >
+      <p class="text-white text-5xl w-[80%] mx-auto uppercase font-thin">
+        consectetur assumenda maiores nulla imilique molestias
+        odio debitis aspernatur " <span class="font-bold textParts">  The cursor will be white if the text is black
+        and black if the text is white </span> " voluptate ipsa similique molestias minima?
+        Assumenda aliquid corporis aut quos similique molestias
+      </p>
+    </div>
+
+    <div
+      class="flex items-center justify-center h-[110vh] text-white bg-neutral-200 bg-white mytxt02Box"
+    >
+      <p class="text-black text-5xl w-[80%] mx-auto uppercase font-thin">
+        consectetur assumenda maiores nulla imilique molestias
+        odio debitis aspernatur " <span class="font-bold textParts ">  The cursor will be white if the text is black
+        and black if the text is white </span> " voluptate ipsa similique molestias minima?
+        Assumenda aliquid corporis aut quos similique molestias
+      </p>
+    </div>
+
+    <div
+      class="flex items-center justify-center h-[110vh] text-white bg-neutral-800 mytxt03Box"
+    >
+      <div class="w-[70%] h-[70%] grid grid-cols-2 gap-10 overflow-hidden">
+        <div class="w-full h-full overflow-hidden">
+          <img
+            src="./img/img.jpg"
+            alt="B/w image"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-full h-full grid grid-row-2 gap-10">
+          <div class="overflow-hidden">
+            <img
+              src="./img/img01.jpg"
+              alt="B/w image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden">
+            <img
+              src="./img/img02.jpg"
+              alt="B/w image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center h-screen text-white bg-neutral-950 mytxt04Box"
+    >
+      <div
+        class="w-[150px] h-[150px] bg-white rounded-full mb-10 border overflow-hidden"
+      >
+        <div class="w-1/2 h-full bg-black"></div>
+      </div>
+      <h3 class="text-5xl font-bold mb-4">CONNECT WITH ME :)</h3>
+      <p class="text-xl">
+        Connect with me on
+        <span class="font-semibold underline italic mx-1">GitHub</span> and
+        <span class="mx-1 font-semibold underline italic">LinkedIn</span> to
+        expand our professional networks! ♥︎
+      </p>
+      <p class="text-xl italic mt-1 font-thin">
+        The project's code is now live on my GitHub.
+      </p>
+    </div>
+
+    <!-- LENIS SMOOTH SCROLLING -->
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <!-- MY FILE -->
+    <script src="script.js"></script>
+  </body>
+</html>
