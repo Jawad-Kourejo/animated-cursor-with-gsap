@@ -2,6 +2,12 @@
 
 A modern, interactive custom cursor effect with smooth animations and scroll support. Features a multi-layered cursor with elastic animation that follows mouse movement with inverted colors for maximum visual impact.
 
+---
+
+**LINK**
+: https://jawad-kourejo.github.io/animated-cursor-with-gsap/
+
+
 ## ✨ Features
 
 - **Multi-layered Cursor**: Three concentric circles that move with elastic easing
